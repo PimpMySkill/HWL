@@ -13,3 +13,5 @@ from tinstrument i with (nolock)
 left join tdeal d with(nolock)
 on i.instrumentid = d.instrumentid
 group by i.brief
+
+select * from tDeal where dealdate = getdate()
